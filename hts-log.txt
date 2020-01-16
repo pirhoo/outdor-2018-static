@@ -1,0 +1,34 @@
+HTTrack3.48-21 launched on Thu, 16 Jan 2020 10:37:05 at 2018.outdor.fr d2gde5ic41h9mc.cloudfront.net/*
+(httrack -w 2018.outdor.fr -O . d2gde5ic41h9mc.cloudfront.net/* -N100 -I )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:37:07	Warning: 	Note: due to 2018.outdor.fr remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+10:37:50	Error: 	"Forbidden" (403) at link d2gde5ic41h9mc.cloudfront.net/* (from primary/primary)
+10:38:04	Error: 	"Method Not Allowed" (405) at link 2018.outdor.fr/xmlrpc.php?rsd (from 2018.outdor.fr/)
+11:00:08	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fles-laureat%25c2%25b7e%25c2%25b7s-2018%2F (from 2018.outdor.fr/les-laureat·e·s-2018/)
+11:00:08	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fles-laureat%25c2%25b7e%25c2%25b7s-2018%2F&format=xml (from 2018.outdor.fr/les-laureat·e·s-2018/)
+11:00:08	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Ftable-ronde%2F (from 2018.outdor.fr/table-ronde/)
+11:00:08	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Ftable-ronde%2F&format=xml (from 2018.outdor.fr/table-ronde/)
+11:00:08	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fla-remise-des-prix%2F (from 2018.outdor.fr/la-remise-des-prix/)
+11:00:08	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fla-remise-des-prix%2F&format=xml (from 2018.outdor.fr/la-remise-des-prix/)
+11:00:08	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fles-categories-recompensees%2F (from 2018.outdor.fr/les-categories-recompensees/)
+11:00:08	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fles-categories-recompensees%2F&format=xml (from 2018.outdor.fr/les-categories-recompensees/)
+11:00:10	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fcoming-out%2F (from 2018.outdor.fr/coming-out/)
+11:00:10	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fcoming-out%2F&format=xml (from 2018.outdor.fr/coming-out/)
+11:00:10	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fdire-les-choses-clairement-cest-moins-fatigant%2F (from 2018.outdor.fr/dire-les-choses-clairement-cest-moins-fatigant/)
+11:00:10	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fdire-les-choses-clairement-cest-moins-fatigant%2F&format=xml (from 2018.outdor.fr/dire-les-choses-clairement-cest-moins-fatigant/)
+11:00:10	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fpourquoi-les-out-dor%2F (from 2018.outdor.fr/pourquoi-les-out-dor/)
+11:00:10	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fpourquoi-les-out-dor%2F&format=xml (from 2018.outdor.fr/pourquoi-les-out-dor/)
+11:00:10	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fedition-2017%2F (from 2018.outdor.fr/edition-2017/)
+11:00:10	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fedition-2017%2F&format=xml (from 2018.outdor.fr/edition-2017/)
+11:00:13	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fles-organisateurs%2F (from 2018.outdor.fr/les-organisateurs/)
+11:00:13	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fles-organisateurs%2F&format=xml (from 2018.outdor.fr/les-organisateurs/)
+11:00:13	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fvote%2F (from 2018.outdor.fr/vote/)
+11:00:13	Error: 	"Bad Request" (400) at link 2018.outdor.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2F2018.outdor.fr%2Fvote%2F&format=xml (from 2018.outdor.fr/vote/)
+
+HTTrack Website Copier/3.48-21 mirror complete in 23 minutes 8 seconds : 218 links scanned, 194 files written (34533107 bytes overall) [34651984 bytes received at 24965 bytes/sec], 2.1 requests per connection
+(22 errors, 1 warnings, 0 messages)

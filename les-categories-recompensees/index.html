@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="fr-FR" prefix="og: http://ogp.me/ns#">
+  
+<!-- Mirrored from 2018.outdor.fr/les-categories-recompensees/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Jan 2020 09:40:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"85e44b67e3",applicationID:"114056210"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1158.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Les nommé·e·s - OUT d&#039;or 2018</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.5.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Les nommé·e·s - OUT d&#039;or 2018" />
+<meta property="og:description" content="Qui recevra l&rsquo;OUT d’or de la rédaction engagée, celui du coup de gueule ou du documentaire ? Qui sera récompensé athlète LGBTI de l’année ? Quelle création artistique sera distinguée cette année ? Quelle sera la personnalité LGBTI du public ? Découvrez la shortlist ! " />
+<meta property="og:url" content="http://2018.outdor.fr/les-categories-recompensees/" />
+<meta property="og:site_name" content="OUT d&#039;or 2018" />
+<meta property="article:publisher" content="https://facebook.com/ajlgbt" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Qui recevra l&rsquo;OUT d’or de la rédaction engagée, celui du coup de gueule ou du documentaire ? Qui sera récompensé athlète LGBTI de l’année ? Quelle création artistique sera distinguée cette année ? Quelle sera la personnalité LGBTI du public ? Découvrez la shortlist ! " />
+<meta name="twitter:title" content="Les nommé·e·s - OUT d&#039;or 2018" />
+<meta name="twitter:site" content="@ajlgbt" />
+<meta name="twitter:creator" content="@ajlgbt" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"http:\/\/2018.outdor.fr\/","sameAs":["https:\/\/facebook.com\/ajlgbt","index.html\/\/www.youtube.com\/channel\/UCLpZOZCYwljPCxMS6UDqdJw","https:\/\/twitter.com\/ajlgbt"],"@id":"http:\/\/2018.outdor.fr\/#organization","name":"AJL","logo":"http:\/\/d2gde5ic41h9mc.cloudfront.net\/wp-content\/uploads\/2018\/05\/25095303\/VIOLET1.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='../index.html' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/2018.outdor.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.6"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='sage/main.css-css'  href='../wp-content/themes/outdor/dist/styles/main_2b479b92.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.6" />
+<link rel='shortlink' href='../index9787.html?p=57' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed2a8a.json?url=http%3A%2F%2F2018.outdor.fr%2Fles-categories-recompensees%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed4cd0.json?url=http%3A%2F%2F2018.outdor.fr%2Fles-categories-recompensees%2F&amp;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+  <body class="page-template page-template-template-awards-categories template-awards-categories page page-id-57 les-categories-recompensees app-data index-data singular-data page-data page-57-data page-les-categories-recompensees-data template-awards-categories-data">
+        <header class="header">
+  <div class="navbar navbar-expand-lg navbar-light">
+    <div class="col px-0">
+              <a class="navbar-brand" href="../index.html">
+          <img src="../wp-content/themes/outdor/dist/images/logo-outdor-horizontal_c9ed305f.svg" alt="Out d'Or 2018" />
+        </a>
+          </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-navigation" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="primary-navigation">
+              <div class="menu-primary-navigation-container"><ul id="menu-primary-navigation" class="header__nav"><li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="../index.html">Les OUT d&rsquo;or 2018</a></li>
+<li id="menu-item-561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-561"><a href="../les-laureat%c2%b7e%c2%b7s-2018/index.html">Les lauréat·e·s</a></li>
+</ul></div>
+                    <ul class="header__nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Le programme
+            </a>
+            <div class="menu-en-savoir-plus-container"><ul id="menu-en-savoir-plus" class="dropdown-menu dropdown-menu-right"><li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="../table-ronde/index.html">Le débat</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="../la-remise-des-prix/index.html">La cérémonie</a></li>
+<li id="menu-item-611" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-57 current_page_item menu-item-611"><a href="index.html">Les nommé·e·s</a></li>
+<li id="menu-item-363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-363"><a href="../coming-out/index.html">L&rsquo;importance du coming out</a></li>
+<li id="menu-item-601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-601"><a href="../dire-les-choses-clairement-cest-moins-fatigant/index.html">N&rsquo;ayons pas peur des mots !</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="../pourquoi-les-out-dor/index.html">Pourquoi les Out d&rsquo;or</a></li>
+<li id="menu-item-365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-365"><a href="../edition-2017/index.html">L&rsquo;édition 2017</a></li>
+<li id="menu-item-329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a href="../les-organisateurs/index.html">Qui sommes nous ?</a></li>
+</ul></div>
+          </li>
+        </ul>
+          </div>
+  </div>
+</header>
+    <div class="wrap" role="document">
+      <div class="content">
+        <main class="main">
+                     <div class="pages pages--awards-categories">
+        <div class="pages__header">
+  <h1>Les nommé·e·s</h1>
+</div>
+        <div class="pages__content">
+  <p>Qui recevra l&rsquo;<strong>OUT d’or de la rédaction engagée,</strong> celui du<strong> coup de gueule </strong>ou du <strong>documentaire </strong>? Qui sera récompensé <strong>athlète LGBTI </strong>de l’année ? Quelle création artistique sera distinguée cette année ? Quelle sera <strong>la personnalité LGBTI du public ? Découvrez la shortlist ! </strong></p>
+  
+</div>
+        <nav class="pages--awards-categories__menu mt-5">
+          <div>
+            <h4>Sommaire</h4>
+            <ol>
+                              <li>
+                  <a href="#c12">
+                    Chaîne YouTube
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c14">
+                    Coup de gueule
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c10">
+                    Création artistique
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c11">
+                    Dessin engagé
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c7">
+                    Documentaire
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c6">
+                    Enquête / reportage
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c15">
+                    Personnalité de l&#039;année
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c9">
+                    Presse étrangère
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c8">
+                    Rédaction engagée
+                  </a>
+                </li>
+                              <li>
+                  <a href="#c13">
+                    Sport
+                  </a>
+                </li>
+                          </ol>
+          </div>
+        </nav>
+        <ul class="pages--awards-categories__list list-unstyled">
+                      <li class="pages--awards-categories__list__item" id="c12">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Chaîne YouTube&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                La communauté LGBTI se sent parfois oubliée des médias. Elle prend donc la parole sur YouTube pour échanger témoignages, conseils, informations.
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="190" src="../wp-content/uploads/2018/05/23162403/VVLD1.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Viens voir le docteur
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">La santé des personnes LGBTI, pour lesquelles un rendez-vous médical peut s’avérer être une expérience fort éprouvante, est souvent un angle mort des médias. Animée par Marielle, Pierrine et Elsa, professionnelles de la santé, “<a href="https://www.youtube.com/channel/UC5j3ir6MGVp2qmKbPZP7MbA">Viens voir le docteur</a>” est une chaîne d’information médicale qui aborde avec pédagogie la santé des personnes queers (PMA, homosexualité et suicide, etc.). </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="218" src="../wp-content/uploads/2018/05/23162621/mxcordelia.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Mx Cordélia
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Mx Cordélia anime deux chaînes. La première  “<a href="https://www.youtube.com/user/cordeliaaime">Cordélia aime</a>” débusque et partage des recommandations de livres queer, tandis que la seconde “<a href="https://www.youtube.com/channel/UCbIOqOXBjp4QYNL2CGRDXLg">Princ(ess)e</a>” est un espace de débat et de réflexion sur les questions "sexo" des minorités de genre et sexuelles. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="183" src="../wp-content/uploads/2018/05/23165507/LezTalk1.jpg" class="attachment-medium size-medium wp-post-image" alt="Lez Talk" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Lez Talk
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Carla et Louisiane, l’une espagnole et lesbienne, l’autre française et bisexuelle, sont en couple. Sur un ton enlevé, souvent léger, intime et drôle à la fois, <a href="https://www.youtube.com/channel/UCOuK5fuhDMhDYYkqoE_AZ9A">elles partagent leurs expériences et répondent aux questions de leurs nombreuses abonnées</a>, pour la plupart des ados, lesbiennes ou bies, qui trouvent ici des récits qui leur ressemblent.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="173" src="../wp-content/uploads/2018/05/23165419/LauraBadler1.png" class="attachment-medium size-medium wp-post-image" alt="Laura Badler" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Laura Badler
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Femme trans, Laura Badler partage expérience et conseils sur la transidentité sur la <a href="https://www.youtube.com/user/16000gothiste">chaîne</a> qui porte son nom.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="168" src="../wp-content/uploads/2018/05/23162442/BonsoirTino.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Bonsoir Tino
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Cette <a href="https://www.youtube.com/user/BonsoirTino">chaîne</a> est animée par un jeune homme pansexuel engagé contre l’homophobie et les clichés, qu’il s’efforce de dénoncer. </span>
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c14">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Coup de gueule&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                Les journalistes, chercheur·se·s, militant·e·s, personnalités qui ont eu le courage de hausser le ton, cette année, pour dénoncer les LGBTIphobies. 
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23171714/robin.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Muriel Robin
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Humoriste bien connue des Français·e·s, Muriel Robin <a href="https://www.huffingtonpost.fr/2018/03/02/dans-c-a-vous-muriel-robin-devoile-les-insultes-homophobes-quelle-et-sa-compagne-anne-le-nen-recoivent_a_23375181/?ncid=tweetlnkfrhpmg00000001">s’est insurgée</a>, sur le plateau de </span><i><span style="font-weight: 400;">C à vous</span></i><span style="font-weight: 400;"> (France 5), en mars 2018, contre le déversement haineux et lesbophobe dont sa compagne, Anne Le Nen, et elle-même ont fait l’objet. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23171728/giovanna.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Giovanna Rincon
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Militante infatigable pour les droits des trans, Giovanna Rincon est notamment apparue en mars 2018 dans une vidéo du Huffington Post qui <a href="https://www.huffingtonpost.fr/giovanna-rincon/pouvoir-sortir-dans-la-rue-en-securite-est-ce-trop-demander-pour-les-femmes-trans_a_23379665/">dénonce avec vigueur</a> un sujet encore trop ignoré par les médias : l’insécurité des femmes transgenres dans l’espace public.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="186" src="../wp-content/uploads/2018/05/23175915/mazoyer1.png" class="attachment-medium size-medium wp-post-image" alt="Émilie Mazoyer" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Emilie Mazoyer
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Journaliste et chroniqueuse, Émilie Mazoyer est une alliée des luttes des minorités LGBTI. Dans son émission </span><i><span style="font-weight: 400;">Shuffle</span></i><span style="font-weight: 400;"> (Europe 1), elle a, en septembre 2017, <a href="http://www.europe1.fr/emissions/shuffle/shuffle-emilie-mazoyer-250917-3446159">pris fermement position</a> contre la censure des affiches du film "Nos Années folles" à Senlis.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23171800/boursier.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Sam Bourcier
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            Sociologue trans, Sam Bourcier est un habitué des prises de position fermes et engagées. En février 2018, lors du débat "Transgenres, parcours de combattant-e-s" dans l’émission Grand écran (LCP), <a href="https://www.dailymotion.com/video/x6ezxqh">il s’est insurgé</a> contre la médicalisation systématique des personnes trans et non-binaires.
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="190" src="../wp-content/uploads/2018/05/23171822/beaulieu_portrait.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Baptiste Beaulieu
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            Médecin généraliste et romancier, Baptiste Beaulieu est très actif sur les réseaux sociaux. En mars 2018, il a <a href="https://www.nouvelobs.com/rue89/nos-vies-intimes/20180315.OBS3680/j-ai-fait-temoigner-le-lobby-lgbt-celui-qui-m-a-permis-de-ne-pas-mourir.html">signé une tribune dans L'Obs</a> qui tord le cou aux préjugés concernant l’existence d’un supposé "lobby LGBT". il donne la parole à des personnes LGBTI, restituant ainsi la réalité des vécus et des discriminations, agressions, auxquelles sont soumises les personnes LGBTI. "J'ai fait témoigner le 'lobby LGBT', celui qui m'a permis de ne pas mourir", écrit-il.
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c10">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Création artistique&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                Un an après les victoires ex-aequo d’&quot;Ouvrir la voix&quot; d’Amandine Gay et de &quot;120 battements par minute&quot; de Robin Campillo, l&#039;OUT d’or de la création artistique aspire, plus que jamais, à célébrer une œuvre qui, par son originalité, sa dimension pédagogique (pour certaines) et les questions de société qu’elle met en perspective, imprègne les imaginaires collectifs de représentations plurielles des personnes LGBTI.
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23171939/couteau.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Un Couteau dans le coeur&quot;, de Yann Gonzalez
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Ce<a href="http://distribution.memento-films.com/film/infos/88"> long-métrage</a>, un thriller à l’esthétique résolument queer, met en scène une Vanessa Paradis en productrice lesbienne de films porno gays, traquée par un mystérieux tueur. Présenté en compétition au Festival de Cannes en mai 2018, il sortira en salles le 27 juin 2018.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="150" src="../wp-content/uploads/2018/05/23172008/aria.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Aria&quot; d’Emilie Jouvet
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Dans ce<a href="https://www.emiliejouvet.com/aria-le-film"> documentaire autobiographique</a> présenté en avant-première lors du festival "Loud and Proud" à Paris en juillet 2017, Émilie Jouvet a donné la parole aux premières concernées : les couples de lesbiennes embarquées dans des parcours de PMA à l’étranger. Cinq ans d’aller-retour entre Paris et Bruxelles, de doutes, de fragilités, de sentiment de solitude, sur fond de reculades politiques et de rhétorique violente émanant de mouvements réactionnaires. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="163" src="../wp-content/uploads/2018/05/23172024/phia.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Phia Ménard (metteuse en scène)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">L’<a href="http://www.cienonnova.com/">artiste et performeuse trans</a> s’est illustrée cette année dans de nombreuses représentations : "Et in arcadia ego", "Les Os noirs", ou encore "Les Contes immoraux", explorant toujours avec brio et intensité, la mort, l’identité, la transformation... Elle sera cet été à Avignon avec "Saison sèche", spectacle inédit, alors que le thème de la 72e édition du festival est "Gender". </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23172039/fiertes.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Fiertés&quot;, de Philippe Faucon
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">La banlieue, le sida, les jeunes immigrés ou encore l’islamisme radical sont les sujets au coeur de l’oeuvre de Philippe Faucon, césarisé trois fois en 2016 pour "Fatima". Avec "<a href="https://www.arte.tv/fr/videos/075162-001-A/fiertes-1-3/">Fiertés</a>" (Arte, mai 2018), il raconte, en trois épisodes de 52 minutes, les grandes étapes de la lutte pour l’égalité des droits, depuis l’élection de François Mitterrand et la dépénalisation de l’homosexualité au mariage et à l’adoption pour tou·te·s, à travers le personnage de Victor et de son compagnon Serge, qui vit avec le VIH.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23172053/honore.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Plaire, aimer et courir vite&quot; et &quot;Ton Père&quot;, de Christophe Honoré
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Ancien critique de cinéma, réalisateur, scénariste et auteur, Christophe Honoré signe, avec "<a href="http://www.lesfilmspelleas.com/film.php?id=162">Plaire, aimer et courir vite</a>", sorti le 10 mai 2018, une grande histoire d’amour, un amour à vivre vite. Dans son livre "<a href="http://www.mercuredefrance.fr/livre-Ton_père-9782715235656-1-1-0-1.html">Ton père</a>" (éditions Mercure de France, septembre 2017), il s’adresse à sa fille, décrit sa famille hors cadre et pourtant si banale et offre un témoignage puissant sur la violence des débats sur le mariage pour tous. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="184" src="../wp-content/uploads/2018/05/23172108/pretto.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Cure&quot;, d&#039;Eddy de Pretto
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Dans la lignée de Chris(tine and The Queens), un artiste pop qui redessine les lignes : entre les genres (rap, chanson française…) et le genre. Les textes coup de poing d'<a href="http://www.eddydepretto.com/">Eddy de Pretto</a> racontent la masculinité toxique, l’injonction à la virilité et l’éclosion d’un jeune homme sexué dans ce grand écart perpétuel entre ce que la société exige et soi. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="179" src="../wp-content/uploads/2018/05/24004702/ababri.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Bed Work&quot; et &quot;Haunted Lives&quot;, de Soufiane Ababri
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Artiste franco-marocain, Soufiane Ababri nous invite dans sa chambre à coucher et explore la figure masculine et la sexualité homosexuelle dans ses dessins. Après "<a href="http://www.galerie-mansart.fr/soufiane-ababri.html">Bed Work</a>", l'exposition "<a href="https://www.praz-delavallade.com/soufiane-ababri-2018">Haunted Lives</a>" est actuellement présenté à la Galerie Praz-Dellavade à Paris jusqu’au 16 juin 2018. </span>
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c11">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Dessin engagé&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="204" src="../wp-content/uploads/2018/05/23172524/zuttion.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Quentin Zuttion
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Ancien membre de la "tribu" MademoiZelle, <a href="https://twitter.com/_monsieurq_">Quentin Zuttion, alias Monsieur Q</a>., collabore depuis peu avec le mensuel Néon. C’est avec délicatesse qu’il aborde dans chacune de ses planches la diversité des corps par le truchement des grandes thématiques queers (le coming out, la sexualité, l’homoconjugalité, etc.). Son deuxième album, Chromatopsie, paraît le 14 juin 2018 aux éditions Lapin.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="270" height="185" src="../wp-content/uploads/2018/05/23172541/leboucher.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Timothé Le Boucher
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Né en 1988, <a href="http://timotheb.canalblog.com/">Timothé Le Boucher</a> compte déjà à son actif trois albums très remarqués : "Skins Party" (Manolosanctis, 2011), "Les Vestiaires" (La Boîte à bulles, 2014) et "Ces jours qui disparaissent" (Glénat, septembre 2017). À chaque fois, il attache une grande visibilité aux personnages LGBTI, sans que cela soit forcément au centre des histoires. Il imagine notamment dans son dernier album un avenir où les genres ont totalement dépassé la binarité homme-femme. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="207" src="../wp-content/uploads/2018/05/23172559/douru.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Muriel Douru
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Écologie, défense animale, féminisme, homoparentalité... : sur ses blogs et dans ses livres, <a href="http://atelieraoutaparis.blogspot.fr/">l’illustratrice Muriel Douru</a> touche à tous les grands thèmes qui dessinent ses engagements. Son dernier ouvrage, "Chroniques d’une citoyenne engagée", paru en 2017 aux éditions Hugo image, compile des centaines de billets d’actualité dessinés sur les égoïsmes mais aussi les aspirations de notre société. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="185" src="../wp-content/uploads/2018/05/23172617/shyle.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Shyle Zalewski
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Très actif·ve sur les réseaux sociaux, <a href="http://shylezalewski.com/">Shyle Zalewski</a> a fait des strips autobiographiques sa spécialité, formats où iel met en scène sa vie – surtout sentimentale et sexuelle – de personne queer au genre fluide. L’occasion aussi d’aborder des thèmes plus profonds, comme les relations sociales, à chaque fois pour inviter à sortir des cases toutes faites. Geek et punk assumé·e, Shyle a aussi un projet musical (dont iel réalise les clips), Edam Edam. Dernier album paru :  "Super Z poche" (Pantypop, janvier 2018).</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="178" src="../wp-content/uploads/2018/05/23172631/porchep.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Pochep
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Auteur régulier de </span><i><span style="font-weight: 400;">La Revue dessinée</span></i><span style="font-weight: 400;">, </span><i><span style="font-weight: 400;">Topo</span></i><span style="font-weight: 400;"> et </span><i><span style="font-weight: 400;">Fluide Glacial</span></i><span style="font-weight: 400;">, Pochep est aussi un <a href="http://www.pochep.fr/">artiste engagé</a>, à l’origine notamment des deux tomes du "Projet 17 mai", qui réunissaient des dessinateurs contre l’homophobie. Dans son nouvel album, "Vieille peau" (éditions Fluide glacial, octobre 2017), il traite avec beaucoup d’autodérision d’un thème très rarement visible, le vieillir gay, et interroge le rapport au corps et à la séduction quand on passe la barre des 50 ans. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="176" src="../wp-content/uploads/2018/05/23172648/mandel.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Lisa Mandel
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Habituée du festival d’Angoulême, la<a href="http://lisamandel.blog.lemonde.fr/"> dessinatrice</a> et auteure de "Princesse aime princesse" est devenue collaboratrice régulière du </span><i><span style="font-weight: 400;">Monde</span></i><span style="font-weight: 400;">. En novembre dernier, elle a publié sur son blog une série de reportages dessinés sur la vie quotidienne des LGBTI au Liban, à la rencontre de celles et ceux qui vivent leur sexualité dans une relative liberté – malgré une loi qui punit toujours "l’acte pervers" – et la menace de descentes de police dans les lieux communautaires. Dernier album paru : "Prézizidentielle", avec Julie Pagis (Casterman, mai 2017).</span><span style="font-weight: 400;">
+</span>
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c7">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Documentaire&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23192033/lautre-mere.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            L&#039;Autre mère, de Mathilde Guermonprez (Arte radio)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            Diffusé le 11 octobre 2017
+
+Dans ce <a href="https://www.arteradio.com/son/61659148/l_autre_mere">documentaire</a> très personnel, Mathilde Guermonprez raconte son difficile parcours pour adopter l'enfant qu'elle a eu avec sa compagne.
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23164129/POURQUOINOUSDETESTENTILS.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Pourquoi nous détestent-ils, nous les homosexuels ?&quot; d&#039;Olivier Nicklaus et Gurwann Tran Van Gie (Planète+)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;"><em>Diffusé le 4 décembre 2017 dans la deuxième saison de "Pourquoi nous détestent-ils ?"</em></span><br>
+
+<span style="font-weight: 400;">Réalisateur, scénariste et comédien aux origines bretonne et vietnamienne, Gurwann assume son homosexualité depuis qu'il a 20 ans. Tout en revenant sur son parcours, il explore dans ce <a href="https://www.mycanal.fr/decouverte/pourquoi-nous-detestent-ils-nous-les-homosexuels-/h/9279870_50034">documentaire</a> les racines de l'homophobie.</span><span style="font-weight: 400;">
+</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23164113/COMINGIN.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Il était une fois la PMA&quot; et &quot;Coming In&quot;, d’Élodie Font
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;"><em>Diffusés respectivement du 25 janvier au 21 février 2018 sur Cheek Magazine et le 17 mai 2017 sur Arte radio</em></span><br>
+
+<span style="font-weight: 400;"><a href="http://cheekmagazine.fr/societe/podcast-pma-episode-1/">Série de cinq podcasts</a> à la découverte d’un univers méconnue, "Il était une fois la PMA" </span><span style="font-weight: 400;">décrypte tout un jargon et, surtout, va à la rencontre de couples de lesbiennes qui ont dû traverser ce parcours de la combattante sans en revenir tout à fait indemnes. </span><br>
+
+<span style="font-weight: 400;">Dans "<a href="https://www.arteradio.com/son/61658766/coming">Coming In</a>", Élodie Font fait, à la première personne, le récit de la prise de conscience de son lesbianisme. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23164022/CHASSE-A-LHOMME-EN-TCHETCHENIE.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Chasse à l’homme en Tchétchénie&quot;, d’Élise Menand, Philippe Maire et Benoît Sauvage (France 2)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Diffusé le 23 novembre 2017 dans </span><i><span style="font-weight: 400;">Envoyé Spécial</span></i><br>
+
+<span style="font-weight: 400;">Paris, Grozny, Saint-Pétersbourg. Des planques françaises aux prisons tchétchènes, ce <a href="https://www.youtube.com/watch?v=NPMNP5en7Nk">reportage</a> met des images sur les récits des réfugié.e.s et tente d’établir l’ampleur des persécutions dans ces camps de concentration. Les ONG estiment à plus d’une centaine le nombre de victimes.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="168" src="../wp-content/uploads/2018/05/23164008/QUAND-LA-CREATION-RACONTE-LE-SIDA.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Quand la création raconte le sida&quot;, de Didier Roth-Bettoni (France culture)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Réalisé par Nathalie Battus</span><br>
+
+<span style="font-weight: 400;">Diffusé du 9 au 12 avril 2018 dans </span><i><span style="font-weight: 400;">LSD (La Série documentaire)</span></i><br>
+
+<span style="font-weight: 400;">Ce <a href="https://www.franceculture.fr/emissions/series/quand-la-creation-raconte-le-sida">documentaire</a> en quatre épisodes raconte les années sida à partir d'archives rares. "Plus qu’aucune autre maladie, le sida a produit un art de l’intime, un art autofictionnel où des créateurs de toutes disciplines ont utilisé leur vécu le plus personnel de la maladie pour faire œuvre, non seulement de témoignage mais aussi d’affirmation, de combat et de refus de la fatalité", note France culture. </span>
+
+&nbsp;
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c6">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Enquête / reportage&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="150" src="../wp-content/uploads/2018/05/23174507/Homos-en-que%c2%a6%c3%a9te-d_asile-tout-le-monde-n_est-pas-loge%c2%a6%c3%bc-a%c2%a6%c3%87-la-me%c2%a6%c3%a9me-enseigne-Les-Inrocks-Cr%c2%aedit-_-Rebekka-Deubner-pour-Les-Inrockuptibles.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Homos en quête d&#039;asile : tout le monde n&#039;est pas logé à la même enseigne&quot;, d&#039;Anne Laffeter (Les Inrockuptibles)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">"Persécutés dans leurs pays, les demandeurs d’asile LGBT se heurtent de plus en plus à la difficulté de trouver refuge en France. Voici les histoires de Katia la Tchétchène, Ghalia la Camerounaise et Berg l’Egyptien, tous trois en attente d’un statut de réfugié. Mais pas avec les mêmes chances de l’obtenir."</span><span style="font-weight: 400;">
+</span>
+
+<a href="https://www.lesinrocks.com/2018/05/01/actualite/societe/homosexuel-le-s-et-en-quete-dasile-la-route-sans-fin-111078034/">Publié</a> le 1er mai 20118
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="148" src="../wp-content/uploads/2018/05/23174520/L_enfer-des-prisons-e%c2%a6%c3%bcgyptiennes-pour-les-gays-et-trans-Slate.fr-Cr%c2%aedit-_-Prison-%c2%aegyptienne-image-d_illustration-l-KHALED-DESOUKI-_-AFP.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;L&#039;enfer des prisons égyptiennes pour les gays et trans&quot;, de Martin Roux (Slate)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">"Derrière les murs des prisons égyptiennes, l'humanité des personnes LGBTI est bafouée. Elles sont victimes d’humiliations permanentes, de torture et de viol."</span>
+
+<a href="http://www.slate.fr/story/155669/gays-trans-prison-egypte">Publié</a> le 3 janvier 2018
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23174535/Etre-femme-et-gay-au-Se%c2%a6%c3%bcne%c2%a6%c3%bcgal-les-lesbiennes-cherchent-leur-place-RFI-Cr%c2%aedit-_-Getty-Images-_-WOJTEK-RADWANSKI.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Être femme et gay au Sénégal : les lesbiennes cherchent leur place&quot;, de Sarah Elzas (RFI)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">"Au Sénégal, comme dans beaucoup de pays dans le monde, l’homosexualité est un sujet tabou [...]. Malgré cela, il existe plusieurs associations de personnes homosexuelles. Mais, organisées autour du dépistage et traitement du sida, ces associations restent masculines. Les femmes lesbiennes ont des difficultés à trouver leur place, non seulement dans la société qui les rejette, mais aussi au sein des associations d’homosexuels."</span>
+
+<a href="http://www.rfi.fr/emission/20170629-senegal-femmes-homosexualite-tabou-lesbiennes-droits-associations-difficultes?ref=fb">Publié</a> le 29 juin 2017
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="196" src="../wp-content/uploads/2018/05/23174550/Vieillir-avec-le-VIH-des-seniors-se%c2%a6%c3%bcropositifs-racontent-leur-quotidien-Le-Monde-Cr%c2%aedit-_-STR-_-AFP.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Vieillir avec le VIH : des seniors séropositifs racontent leur quotidien &quot; de Marie Slavicek (Le Monde)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">"Vieillissement prématuré, isolement et crainte de la pauvreté représentent de nouveaux enjeux pour les seniors séropositifs."</span>
+
+<a href="https://www.lemonde.fr/societe/article/2017/12/01/vieux-et-seropositif-la-double-peine_5222984_3224.html">Publié</a> le 1er décembre 2017
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="181" src="../wp-content/uploads/2018/05/23175532/A-Nice.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;À Nice, la Manif pour tous accapare les débats sur la PMA&quot;, de Louise Fessard (Mediapart)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">"À Nice, le débat sur l’ouverture de la PMA à toutes les femmes s’est déroulé sans qu'on entende les lesbiennes et les femmes célibataires. Lors de ces états généraux de la bioéthique, la présence de personnes proches de la Manif pour tous est en revanche massive."</span><span style="font-weight: 400;">
+</span>
+
+<a href="https://www.mediapart.fr/journal/france/010318/nice-la-manif-pour-tous-accapare-les-debats-sur-la-pma">Publié</a> le 1er mars 2018
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="158" src="../wp-content/uploads/2018/05/23174809/Le-malaise-des-patients-LGBTI-chez-le-me%c2%a6%c3%bcdecin-franceinfo.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Le malaise des patients LGBTI chez le médecin&quot; de Marie-Violette Bernard et Louise Hemmerlé (franceinfo)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">"A quoi se heurtent les patients LGBTI ? Comment améliorer les rapports entre soignants et soignés ? franceinfo a recueilli les témoignages de patients et de praticiens."</span>
+
+<a href="https://www.francetvinfo.fr/choix/enquete-franceinfo-entre-mefiance-et-humiliation-le-parcours-du-combattant-des-personnes-lgbti-chez-le-medecin_2595434.html">Publié</a> le 1er mars 2018
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="179" src="../wp-content/uploads/2018/05/23175130/Des-intrus-en-politique.-Femmes-et-minorite%c2%a6%c3%bcs-dominations-et-re%c2%a6%c3%bcsistances-E%c2%a6%c3%bcditions-du-De%c2%a6%c3%bctour.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            &quot;Des intrus en politique. Femmes et minorités : dominations et résistances&quot;, d&#039;Aude Lorriaux et Mathilde Larrère (Éditions du Détour)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">"Nos représentants politiques ont longtemps été des hommes blancs et aisés. Aujourd’hui la situation change et quelques places ont été cédées à des femmes, des personnes racialisées, issues des classes populaires ou homosexuels."</span>
+
+<a href="http://editionsdudetour.com/index.php/les-livres/des-intrus-en-politique/">Publié</a> le 25 janvier 2018
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c15">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Personnalité de l&#039;année&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="142" src="../wp-content/uploads/2018/05/23180207/sans-bordureOO2018personnalite%cc%81s-copie.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            L'OUT d'or de la personnalité de l'année sera attribué par un vote du public ! <a href="../vote/index.html">Cliquez ici</a> pour découvrir la liste des nommé·e·s et exprimer votre préférence !
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c9">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Presse étrangère&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="152" src="../wp-content/uploads/2018/05/23153507/SHAMS.png" class="attachment-medium size-medium wp-post-image" alt="SHAMS RAD" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            SHAMS RAD (Tunisie)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Cette <a href="https://www.facebook.com/SHAMS-RAD-759151530946388/">web-radio</a> LGBTI tunisienne, à l'antenne depuis décembre 2017, est la première du genre dans le monde arabe.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23153657/OLYMPIC-CHANNEL.jpg" class="attachment-medium size-medium wp-post-image" alt="Série &quot;Identify&quot; d&#039;Olympic Channel" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Olympic Channel (basée à Madrid)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">La web TV du Comité international olympique a diffusé en juin 2017 la <a href="https://www.olympicchannel.com/fr/playback/identify/">série</a> "Identify", consacrée à cinq athlètes trans.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="147" src="../wp-content/uploads/2018/05/23153746/MEDUZA.png" class="attachment-medium size-medium wp-post-image" alt="Enquête de Meduza" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Meduza (Lettonie)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Site d'enquête russe basé en Lettonie pour fuir la censure, Meduza a publié en novembre 2017 l’<a href="https://meduza.io/en/feature/2017/11/02/he-wasn-t-worthy-of-being-a-man">enquête de Mikhail Danilovich</a> intitulée "Il n'était pas digne d'être un homme" ("He wasn’t worthy of being a man"), soulignant le laxisme de la justice russe envers les meurtriers d'homosexuels. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="165" src="../wp-content/uploads/2018/05/23153327/MARVIA-MALIK1.jpg" class="attachment-medium size-medium wp-post-image" alt="Marvia Malik" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Marvia Malik (Pakistan)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Nommée présentatrice sur la chaîne TV Kohenoor News en mars 2018, <a href="https://twitter.com/marvia_malik">Marvia Malik</a> est devenue la première femme trans à occuper une telle fonction au Pakistan.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23153614/EL-PAIS.jpg" class="attachment-medium size-medium wp-post-image" alt="Vidéo d&#039;El Pais consacrée à la visibilité lesbienne" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            El País (Espagne)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Le 26 avril 2018, le journal madrilène a publié la <a href="https://elpais.com/elpais/2018/04/25/tentaciones/1524663771_161581.html">vidéo</a> "Journée de la visibilité lesbienne : 26 femmes font face” ("Día de la visibilidad lésbica : 26 mujeres dan la cara").</span><span style="font-weight: 400;">
+</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23150808/BBC-THE-SOCIAL.jpg" class="attachment-medium size-medium wp-post-image" alt="Time for love - Homophobia in 2018" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            BBC Scotland - The Social (Royaume-Uni)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            La chaîne a diffusé en avril 2018 le <a href="https://youtu.be/anD9ZrMJT8k">film</a> du jeune Sean Lìonadh intitulée "Le moment d'aimer - L’homophobie en 2018” (“Time for love - Homophobia in 2018”).
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c8">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Rédaction engagée&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="151" src="../wp-content/uploads/2018/05/23172239/rtlgirls.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            RTL Girls
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;"><a href="http://www.rtl.fr/girls">RTL Girls</a> publie des articles sur des thématiques féministes et LGBTI dans des domaines divers (éducation, santé,  politique, culture, sport, etc.). Avec ses catégories "égalité", "société" et "sexualité", la plateforme de RTL donne la parole aux premières concernées et contribue à lutter contre les clichés.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="182" src="../wp-content/uploads/2018/05/23172253/brut.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Brut
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            Dans ses <a href="https://www.facebook.com/brutofficiel">vidéos très virales</a> sur les réseaux sociaux, Brut met régulièrement en avant des thématiques liées aux LGBTphobies et aux droits des personnes LGBTI.
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="153" src="../wp-content/uploads/2018/05/23172310/rue89heteroclite.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Rue 89 Lyon-Hétéroclite
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Rue 89 Lyon <a href="https://www.rue89lyon.fr/author/heteroclite/">ouvre ses colonnes</a> à </span><i><span style="font-weight: 400;">Hétéroclite</span></i><span style="font-weight: 400;">, mensuel régional queer, permettant d’avoir une actualité locale LGBTI respectueuse.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="300" src="../wp-content/uploads/2018/05/23172324/libe.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Libération
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Le quotidien a lancé Libé LGBT+,  un <a href="http://www.twitter.com/Libe_LGBT">compte Twitter</a> dédié aux thématiques LGBTI, leur donnant ainsi de la visibilité.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="152" src="../wp-content/uploads/2018/05/23172408/franceinfo.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            franceinfo.fr
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Le<a href="http://www.franceinfo.fr/"> site d’information</a> a réalisé de nombreux articles sur la PMA et les LGBTIphobies ainsi que des enquêtes sur les thématiques LGBTI, notamment sur la santé, l’adoption et l’homophobie dans l’armée.</span>
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                      <li class="pages--awards-categories__list__item" id="c13">
+              <h4 class="pages--awards-categories__list__item__heading pb-5">
+                Dans la catégorie «&nbsp;Sport&nbsp;»
+              </h4>
+              <div class="pages--awards-categories__list__item__description">
+                En cette année des Gay games à Paris, cet été, l’Association des journalistes LGBTI pouvait difficilement passer à côté du monde du sport. Largement médiatisé, il reste néanmoins un lieu de discriminations et d’omerta. Certain.e.s brisent pourtant la loi du silence. Un Out d’or n’est pas de trop pour en inciter d’autres à montrer qu’on peut être un.e athlète de haut niveau et être LGBTI. 
+              </div>
+              <!--h5 class="pages--awards-categories__list__item__inter">
+                Les nominé•e•s
+              </h5-->
+              <div class="pages--awards-categories__list__item__nominees mt-4">
+                <div class="container-fluid">
+                  <div class="row">
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23163111/LEMAIRE.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Yoann Lemaire (football)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">Premier footballeur français en activité à faire son coming out en 2004, et victime d’homophobie dans son club amateur des Ardennes le FC Chooz, Yoann Lemaire est le protagoniste du <a href="https://vimeo.com/233999420">documentaire</a> "Footballeur et Homo : l'un n'empêche pas l'autre", réalisé par Michel Royer. Déjà présenté en avant-première, il doit prochainement être diffusé dans la case Infrarouge de France Télévisions. </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="169" src="../wp-content/uploads/2018/05/23163126/FORGUES.png" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Sandra Forgues (canoë)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">En mars, la sportive est devenue la première championne olympique française à faire son coming out trans dans une<a href="https://www.lequipe.fr/Canoe-kayak/Article/Wilfrid-forgues-devenu-sandra-ma-vie-intime-etait-en-prison/882502"> longue interview à “L’Equipe”</a>. Sandra Forgues avait obtenu la médaille d’or en canoë slalom biplace avec Frank Adisson aux Jeux olympiques d’Atlanta en 1996.</span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="300" src="../wp-content/uploads/2018/05/23163138/PICHON.jpg" class="attachment-medium size-medium wp-post-image" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Marinette Pichon (football)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;"><a href="https://twitter.com/pichonmarinette">L’ancienne capitaine de l’équipe de France de football</a>, a été l’une des premières sportives françaises de haut niveau à faire son coming out. Aujourd’hui, elle est notamment consultante pour France Télévisions et elle a sorti en avril son autobiographie, “Ne jamais rien lâcher” (First éditions). </span>
+                          </div>
+                        </div>
+                      </div>
+                                          <div class="col-12 pages--awards-categories__list__item__nominees__item row no-gutters">
+                        <div class="col">
+                          <div class="pages--awards-categories__list__item__nominees__item__thumbnail">
+                            <img width="300" height="163" src="../wp-content/uploads/2018/05/23165752/HANDBALLEUSES1.jpg" class="attachment-medium size-medium wp-post-image" alt="Amandine Leynaud et Alexandra Lacrabère" />
+                          </div>
+                        </div>
+                        <div class="col-8 pl-5">
+                          <div class="pages--awards-categories__list__item__nominees__item__name">
+                            Amandine Leynaud et Alexandra Lacrabère (handball)
+                          </div>
+                          <div class="pages--awards-categories__list__item__nominees__item__description">
+                            <span style="font-weight: 400;">En décembre 2017, ces deux joueuses professionnelles, out depuis quelques années, sont devenues championnes du monde avec l’équipe de France, en battant la Norvège en finale, à Hambourg (Allemagne). Le match a été diffusé sur TF1 en direct et a réuni 4,3 millions de téléspectateurs en moyenne.</span>
+                          </div>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              </div>
+            </li>
+                  </ul>
+      </div>
+            </main>
+              </div>
+    </div>
+        <footer class="content-info">
+  <div class="container">
+      </div>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119777522-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119777522-1');
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=149722788450510&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <link rel='stylesheet' id='dgwt-jg-swipebox-css'  href='../wp-content/plugins/justified-gallery/includes/Lightbox/Swipebox/assets/css/swipebox.mine7f0.css?ver=1.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-content/themes/outdor/dist/scripts/main_2b479b92.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min1845.js?ver=4.9.6'></script>
+<script type='text/javascript' src='../wp-content/plugins/justified-gallery/includes/Lightbox/Swipebox/assets/js/jquery.swipebox.mine7f0.js?ver=1.3.1'></script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"85e44b67e3","applicationID":"114056210","transactionName":"NVFWYEMFXhJWBRJbWwwbYUZYS1kPUwMeHEQKRA==","queueTime":0,"applicationTime":904,"atts":"GRZVFgsfTRw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from 2018.outdor.fr/les-categories-recompensees/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Jan 2020 09:48:33 GMT -->
+</html>

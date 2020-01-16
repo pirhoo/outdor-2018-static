@@ -1,0 +1,8 @@
+-w 2018.outdor.fr -O . d2gde5ic41h9mc.cloudfront.net/* -N100 -I
+File generated automatically on Thu, 16 Jan 2020 10:37:05, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+
